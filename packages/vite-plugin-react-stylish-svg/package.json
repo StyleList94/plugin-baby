@@ -1,0 +1,62 @@
+{
+  "name": "vite-plugin-react-stylish-svg",
+  "version": "0.0.0",
+  "description": "Stylishly handling SVG in Vite + React",
+  "author": "StyleList94",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StyleList94/plugin-baby.git",
+    "directory": "packages/vite-plugin-react-stylish-svg"
+  },
+  "homepage": "https://github.com/StyleList94/plugin-baby/tree/main/packages/vite-plugin-react-stylish-svg#readme",
+  "bugs": {
+    "url": "https://github.com/StyleList94/plugin-baby/issues"
+  },
+  "type": "module",
+  "keywords": [
+    "vite-plugin",
+    "react",
+    "svg",
+    "svgr",
+    "icon",
+    "component"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "vite": ">=7.0.0",
+    "react": ">=18.0.0"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^5.1.0",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0"
+  },
+  "devDependencies": {
+    "@plugin-baby/eslint-config": "workspace:*",
+    "@plugin-baby/typescript-config": "workspace:*",
+    "@types/node": "^22.18.8",
+    "@types/react": "^19.2.2",
+    "tsdown": "^0.15.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9"
+  }
+}
