@@ -67,6 +67,9 @@ importers:
       '@svgr/plugin-jsx':
         specifier: ^8.1.0
         version: 8.1.0(@svgr/core@8.1.0(typescript@5.9.3))
+      react:
+        specifier: '>=18.0.0'
+        version: 19.2.0
     devDependencies:
       '@plugin-baby/eslint-config':
         specifier: workspace:*
@@ -2060,6 +2063,10 @@ packages:
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  react@19.2.0:
+    resolution: {integrity: sha512-tmbWg6W31tQLeB5cdIBOicJDJRR2KzXsV7uSK9iNfLWQ5bIZfxuPEHp7M8wiHyHnn0DD1i7w3Zmin0FtkrwoCQ==}
+    engines: {node: '>=0.10.0'}
 
   read-yaml-file@1.1.0:
     resolution: {integrity: sha512-VIMnQi/Z4HT2Fxuwg5KrY174U1VdUIASQVWXXyqtNRtxSr9IYkn1rsI6Tb6HsrHCmB7gVpNwX6JxPTHcH6IoTA==}
@@ -4580,6 +4587,8 @@ snapshots:
   queue-microtask@1.2.3: {}
 
   react-is@16.13.1: {}
+
+  react@19.2.0: {}
 
   read-yaml-file@1.1.0:
     dependencies:
