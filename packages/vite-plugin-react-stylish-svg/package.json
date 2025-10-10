@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-react-stylish-svg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stylishly handling SVG in Vite + React",
   "author": "StyleList94",
   "license": "MIT",
