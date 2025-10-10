@@ -7,17 +7,98 @@ import { transformWithEsbuild } from 'vite';
 import { transform } from '@svgr/core';
 import { createFilter } from '@rollup/pluginutils';
 
+/**
+ * Configuration options for this plugin.
+ * @public
+ */
 export type PluginOptions = {
-  /* exclude files from processing */
+  /**
+   * Files to exclude from SVG processing.
+   * Can be a string glob pattern, array of patterns, or RegExp.
+   * @defaultValue `/node_modules/`
+   * @example
+   * ```ts
+   * exclude: ['**\/icons\/*.svg', /\.component\.svg$/]
+   * ```
+   */
   exclude?: string | string[] | RegExp;
-  /* default size when size prop not provided */
+
+  /**
+   * Default size to apply to SVG icons when size prop is not provided.
+   * This value is used as a fallback in the size resolution chain.
+   * @defaultValue `undefined`
+   * @example
+   * ```ts
+   * defaultIconSize: 24
+   * // or
+   * defaultIconSize: '1.5rem'
+   * ```
+   */
   defaultIconSize?: number | string;
-  /* default props for all SVG elements */
+
+  /**
+   * Default props to apply to all SVG elements.
+   * These props will be merged with the SVG component props.
+   * @defaultValue `undefined`
+   * @example
+   * ```ts
+   * defaultProps: {
+   *   focusable: false,
+   *   'aria-hidden': true,
+   *   role: 'img'
+   * }
+   * ```
+   */
   defaultProps?: Partial<SVGProps<SVGSVGElement>>;
 };
 
+/**
+ * Internal type for splitting module ID into filepath and query string.
+ * @internal
+ */
 type ResultSplitId = [string, string | undefined];
 
+/**
+ * Creates a Vite plugin for transforming SVG files into React components with enhanced styling capabilities.
+ *
+ * @remarks
+ * This plugin provides multiple import modes:
+ * - `?react` - Standard React component
+ * - `?icon` - Enhanced icon component with size and color props (applies to both fill and stroke)
+ * - `?icon-fill` - Enhanced icon component with color applied to fill only
+ * - `?icon-stroke` - Enhanced icon component with color applied to stroke only
+ *
+ * The enhanced icon components support the following props:
+ * - `size` - Sets both width and height
+ * - `color` - Sets the SVG color using currentColor
+ * - `width`, `height` - Individual dimension control
+ * - `style` - Additional styles (color from style.color is respected)
+ *
+ * @param options - Configuration options for the plugin
+ * @returns A Vite plugin instance
+ *
+ * @example
+ *
+ * ```tsx
+ * // Standard React component
+ * import Brand from './brand.svg?react'
+ * <Brand />
+ *
+ * // Enhanced icon with size and color control
+ * import BrandIcon from './brand.svg?icon'
+ * <BrandIcon size="1.5rem" color="#41D1FF" />
+ *
+ * // Icon with fill color control only
+ * import BrandIcon from './brand.svg?icon-fill'
+ * <BrandIcon size={24} color="#BD34FE" />
+ *
+ * // Icon with stroke color control only
+ * import BrandIcon from './brand.svg?icon-stroke'
+ * <BrandIcon width={24} height={24} color="#FFEA83" />
+ * ```
+ *
+ * @public
+ */
 export default function reactStylishSvg(options: PluginOptions = {}): Plugin {
   const { exclude = /node_modules/, defaultIconSize, defaultProps } = options;
   const filter = createFilter(/\.svg$/, exclude);
