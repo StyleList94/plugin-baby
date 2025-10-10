@@ -3,7 +3,6 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import turboPlugin from 'eslint-plugin-turbo';
 import stylish from 'eslint-config-stylish';
 import stylishTypeScript from 'eslint-config-stylish/typescript';
-import tseslint from 'typescript-eslint';
 
 /**
  * A shared ESLint configuration for the repository.
