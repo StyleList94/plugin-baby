@@ -1,5 +1,11 @@
 # vite-plugin-react-stylish-svg
 
+## 1.0.2
+
+### Patch Changes
+
+- a63ea06: Action on import security changes
+
 ## 1.0.1
 
 ### Patch Changes
