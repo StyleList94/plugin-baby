@@ -11,6 +11,7 @@ export default function sexyDeclareType(): Plugin {
 
   return {
     name: 'vite-plugin-sexy-declare-type',
+    apply: 'build',
 
     configResolved(resolvedConfig) {
       config = resolvedConfig;
