@@ -1,5 +1,11 @@
 # vite-plugin-react-stylish-svg
 
+## 1.0.3
+
+### Patch Changes
+
+- b0aff41: Update dependencies
+
 ## 1.0.2
 
 ### Patch Changes
