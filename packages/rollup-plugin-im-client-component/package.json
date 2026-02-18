@@ -1,14 +1,14 @@
 {
-  "name": "vite-plugin-crush-envy",
-  "version": "1.0.0",
-  "description": "Make .env type-safe, finally",
+  "name": "rollup-plugin-im-client-component",
+  "version": "0.0.0",
+  "description": "Automatically detect client-side React APIs and inject 'use client' directive into build output",
   "author": "StyleList94",
   "license": "MIT",
-  "homepage": "https://github.com/StyleList94/plugin-baby/tree/main/packages/vite-plugin-crush-envy#readme",
+  "homepage": "https://github.com/StyleList94/plugin-baby/tree/main/packages/rollup-plugin-im-client-component#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/StyleList94/plugin-baby.git",
-    "directory": "packages/vite-plugin-crush-envy"
+    "directory": "packages/rollup-plugin-im-client-component"
   },
   "bugs": {
     "url": "https://github.com/StyleList94/plugin-baby/issues"
@@ -19,13 +19,13 @@
     "lint": "eslint src"
   },
   "keywords": [
+    "rollup-plugin",
     "vite-plugin",
-    "typescript",
-    "env",
-    "dotenv",
-    "types",
-    "dts",
-    "autocompletion"
+    "use-client",
+    "react",
+    "rsc",
+    "server-components",
+    "directive"
   ],
   "type": "module",
   "main": "./dist/index.mjs",
@@ -43,15 +43,18 @@
   "engines": {
     "node": ">=20"
   },
-  "peerDependencies": {
-    "vite": ">=7.0.0"
+  "dependencies": {
+    "es-module-lexer": "^2.0.0",
+    "magic-string": "^0.30.21",
+    "picomatch": "^4.0.3"
   },
   "devDependencies": {
     "@plugin-baby/eslint-config": "workspace:*",
     "@plugin-baby/typescript-config": "workspace:*",
     "@types/node": "^24.10.4",
+    "@types/picomatch": "^4.0.2",
+    "rollup": "^4.40.0",
     "tsdown": "^0.20.3",
-    "typescript": "^5.9.3",
-    "vite": "^7.3.0"
+    "typescript": "^5.9.3"
   }
 }
