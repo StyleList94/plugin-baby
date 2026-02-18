@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-im-client-component",
   "version": "0.0.0",
-  "description": "Automatically detect client-side React APIs and inject 'use client' directive into build output",
+  "description": "Let your components say 'use client' themselves",
   "author": "StyleList94",
   "license": "MIT",
   "homepage": "https://github.com/StyleList94/plugin-baby/tree/main/packages/rollup-plugin-im-client-component#readme",

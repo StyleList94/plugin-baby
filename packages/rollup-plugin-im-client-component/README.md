@@ -1,6 +1,6 @@
 # rollup-plugin-im-client-component
 
-Automatically detect client-side React APIs and inject `'use client'` directive into build output
+Let your components say `'use client'` themselves
 
 [![npm](https://img.shields.io/npm/v/rollup-plugin-im-client-component)](https://www.npmjs.com/package/rollup-plugin-im-client-component)
 
@@ -21,16 +21,6 @@ Automatically detect client-side React APIs and inject `'use client'` directive 
 
 ```bash
 pnpm add -D rollup-plugin-im-client-component
-```
-
-```bash
-# or npm
-npm install -D rollup-plugin-im-client-component
-```
-
-```bash
-# or yarn
-yarn add -D rollup-plugin-im-client-component
 ```
 
 ## Quick Start
