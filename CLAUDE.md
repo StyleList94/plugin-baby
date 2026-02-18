@@ -31,7 +31,7 @@ pnpm release            # Build + publish to npm
 
 ## Architecture
 
-```
+```text
 packages/
   _eslint-config/              # Shared ESLint flat config (@plugin-baby/eslint-config)
   _typescript-config/          # Shared tsconfig for tsdown (@plugin-baby/typescript-config)
