@@ -1,0 +1,9 @@
+{
+  "extends": "@plugin-baby/typescript-config/tsdown.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
