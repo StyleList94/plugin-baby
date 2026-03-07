@@ -1,5 +1,11 @@
 # vite-plugin-sexy-declare-type
 
+## 1.0.5
+
+### Patch Changes
+
+- 34758df: resolve issue to exports
+
 ## 1.0.4
 
 ### Patch Changes
