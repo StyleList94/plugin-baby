@@ -1,5 +1,11 @@
 # vite-plugin-react-stylish-svg
 
+## 1.0.6
+
+### Patch Changes
+
+- cc05d29: fix types export path and lower vite peer dependency
+
 ## 1.0.5
 
 ### Patch Changes
