@@ -1,5 +1,11 @@
 # vite-plugin-crush-envy
 
+## 1.0.2
+
+### Patch Changes
+
+- cc05d29: lower vite peer dependency to >=6.0.0
+
 ## 1.0.1
 
 ### Patch Changes
