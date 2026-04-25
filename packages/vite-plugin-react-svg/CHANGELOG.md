@@ -1,5 +1,11 @@
 # @stylelish/vite-plugin-react-svg
 
+## 2.0.0
+
+### Major Changes
+
+- e4db042: Renamed to `@stylelish/vite-plugin-react-svg`.
+
 ## 1.0.6
 
 ### Patch Changes

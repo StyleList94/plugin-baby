@@ -1,6 +1,6 @@
 {
   "name": "@stylelish/vite-plugin-declare-type",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "Zero-config TypeScript declaration file generator for Vite library mode",
   "author": "StyleList94",
   "license": "MIT",
