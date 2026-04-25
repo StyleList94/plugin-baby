@@ -1,4 +1,4 @@
-# vite-plugin-react-stylish-svg
+# @stylelish/vite-plugin-react-svg
 
 ## 1.0.6
 

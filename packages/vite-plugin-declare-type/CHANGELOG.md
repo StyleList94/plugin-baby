@@ -1,4 +1,4 @@
-# vite-plugin-sexy-declare-type
+# @stylelish/vite-plugin-declare-type
 
 ## 1.0.6
 

@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-react-stylish-svg",
+  "name": "@stylelish/vite-plugin-react-svg",
   "version": "1.0.6",
   "description": "Stylishly handling SVG in Vite + React",
   "author": "StyleList94",
@@ -7,9 +7,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/StyleList94/plugin-baby.git",
-    "directory": "packages/vite-plugin-react-stylish-svg"
+    "directory": "packages/vite-plugin-react-svg"
   },
-  "homepage": "https://github.com/StyleList94/plugin-baby/tree/main/packages/vite-plugin-react-stylish-svg#readme",
+  "homepage": "https://github.com/StyleList94/plugin-baby/tree/main/packages/vite-plugin-react-svg#readme",
   "bugs": {
     "url": "https://github.com/StyleList94/plugin-baby/issues"
   },
