@@ -1,6 +1,6 @@
 {
   "name": "@stylelish/rollup-plugin-im-client-component",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Let your components say 'use client' themselves",
   "author": "StyleList94",
   "license": "MIT",
