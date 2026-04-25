@@ -1,8 +1,15 @@
 # Vite Plugin Crush Envy
 
+> ⚠️ **Renamed from `vite-plugin-crush-envy`.** The unscoped package is deprecated and will no longer receive updates. Update your imports:
+>
+> ```diff
+> - import crushEnvy from 'vite-plugin-crush-envy';
+> + import crushEnvy from '@stylelish/vite-plugin-crush-envy';
+> ```
+
 Make `.env` type-safe, finally
 
-[![npm](https://img.shields.io/npm/v/vite-plugin-crush-envy)](https://www.npmjs.com/package/vite-plugin-crush-envy)
+[![npm](https://img.shields.io/npm/v/@stylelish/vite-plugin-crush-envy)](https://www.npmjs.com/package/@stylelish/vite-plugin-crush-envy)
 
 ## Features
 
@@ -20,7 +27,7 @@ Make `.env` type-safe, finally
 ### Install
 
 ```bash
-pnpm add -D vite-plugin-crush-envy
+pnpm add -D @stylelish/vite-plugin-crush-envy
 ```
 
 ## Quick Start
@@ -31,7 +38,7 @@ pnpm add -D vite-plugin-crush-envy
 
 ```typescript
 import { defineConfig } from 'vite';
-import crushEnvy from 'vite-plugin-crush-envy';
+import crushEnvy from '@stylelish/vite-plugin-crush-envy';
 
 export default defineConfig({
   plugins: [crushEnvy()],

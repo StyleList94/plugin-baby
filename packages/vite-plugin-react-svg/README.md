@@ -1,8 +1,15 @@
-# Vite Plugin React Stylish SVG
+# Vite Plugin React SVG
+
+> ⚠️ **Renamed from `vite-plugin-react-stylish-svg`.** The unscoped package is deprecated and will no longer receive updates. Update your imports:
+>
+> ```diff
+> - import reactStylishSvg from 'vite-plugin-react-stylish-svg';
+> + import reactSvg from '@stylelish/vite-plugin-react-svg';
+> ```
 
 Stylishly handling SVG in Vite + React
 
-[![npm](https://img.shields.io/npm/v/vite-plugin-react-stylish-svg)](https://www.npmjs.com/package/vite-plugin-react-stylish-svg)
+[![npm](https://img.shields.io/npm/v/@stylelish/vite-plugin-react-svg)](https://www.npmjs.com/package/@stylelish/vite-plugin-react-svg)
 
 ## Features
 
@@ -23,7 +30,7 @@ Stylishly handling SVG in Vite + React
 ### install
 
 ```bash
-pnpm add -D vite-plugin-react-stylish-svg
+pnpm add -D @stylelish/vite-plugin-react-svg
 ```
 
 ## Quick Start
@@ -35,10 +42,10 @@ pnpm add -D vite-plugin-react-stylish-svg
 ```typescript
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import reactStylishSvg from 'vite-plugin-react-stylish-svg';
+import reactSvg from '@stylelish/vite-plugin-react-svg';
 
 export default defineConfig({
-  plugins: [react(), reactStylishSvg()],
+  plugins: [react(), reactSvg()],
 });
 ```
 
@@ -50,7 +57,7 @@ You can add type declarations in two ways.
 
 ```diff
 /// <reference types="vite/client" />
-+ /// <reference types="vite-plugin-react-stylish-svg/types" />
++ /// <reference types="@stylelish/vite-plugin-react-svg/types" />
 ```
 
 or `tsconfig.json`
@@ -58,7 +65,7 @@ or `tsconfig.json`
 ```json
 {
   "compilerOptions": {
-    "types": ["vite-plugin-react-stylish-svg/types"]
+    "types": ["@stylelish/vite-plugin-react-svg/types"]
   }
 }
 ```

@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-crush-envy",
+  "name": "@stylelish/vite-plugin-crush-envy",
   "version": "1.0.2",
   "description": "Make .env type-safe, finally",
   "author": "StyleList94",

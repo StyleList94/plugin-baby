@@ -1,14 +1,14 @@
 {
-  "name": "vite-plugin-sexy-declare-type",
+  "name": "@stylelish/vite-plugin-declare-type",
   "version": "1.0.6",
   "description": "Zero-config TypeScript declaration file generator for Vite library mode",
   "author": "StyleList94",
   "license": "MIT",
-  "homepage": "https://github.com/StyleList94/plugin-baby/tree/main/packages/vite-plugin-sexy-declare-type#readme",
+  "homepage": "https://github.com/StyleList94/plugin-baby/tree/main/packages/vite-plugin-declare-type#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/StyleList94/plugin-baby.git",
-    "directory": "packages/vite-plugin-sexy-declare-type"
+    "directory": "packages/vite-plugin-declare-type"
   },
   "bugs": {
     "url": "https://github.com/StyleList94/plugin-baby/issues"

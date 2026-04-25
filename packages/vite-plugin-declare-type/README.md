@@ -1,8 +1,15 @@
-# Vite Plugin Sexy Declare Type
+# Vite Plugin Declare Type
+
+> ⚠️ **Renamed from `vite-plugin-sexy-declare-type`.** The unscoped package is deprecated and will no longer receive updates. Update your imports:
+>
+> ```diff
+> - import sexyDeclareType from 'vite-plugin-sexy-declare-type';
+> + import declareType from '@stylelish/vite-plugin-declare-type';
+> ```
 
 Zero-config TypeScript declaration file generator for Vite library mode
 
-[![npm](https://img.shields.io/npm/v/vite-plugin-sexy-declare-type)](https://www.npmjs.com/package/vite-plugin-sexy-declare-type)
+[![npm](https://img.shields.io/npm/v/@stylelish/vite-plugin-declare-type)](https://www.npmjs.com/package/@stylelish/vite-plugin-declare-type)
 
 ## Features
 
@@ -20,7 +27,7 @@ Zero-config TypeScript declaration file generator for Vite library mode
 ### Install
 
 ```bash
-pnpm add -D vite-plugin-sexy-declare-type
+pnpm add -D @stylelish/vite-plugin-declare-type
 ```
 
 ## Quick Start
@@ -31,7 +38,7 @@ pnpm add -D vite-plugin-sexy-declare-type
 
 ```typescript
 import { defineConfig } from 'vite';
-import sexyDeclareType from 'vite-plugin-sexy-declare-type';
+import declareType from '@stylelish/vite-plugin-declare-type';
 
 export default defineConfig({
   build: {
@@ -40,7 +47,7 @@ export default defineConfig({
       formats: ['es'],
     },
   },
-  plugins: [sexyDeclareType()],
+  plugins: [declareType()],
 });
 ```
 

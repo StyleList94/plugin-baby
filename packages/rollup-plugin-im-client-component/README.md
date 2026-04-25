@@ -1,8 +1,15 @@
 # rollup-plugin-im-client-component
 
+> ⚠️ **Renamed from `rollup-plugin-im-client-component`.** The unscoped package is deprecated and will no longer receive updates. Update your imports:
+>
+> ```diff
+> - import clientDirective from 'rollup-plugin-im-client-component';
+> + import clientDirective from '@stylelish/rollup-plugin-im-client-component';
+> ```
+
 Let your components say `'use client'` themselves
 
-[![npm](https://img.shields.io/npm/v/rollup-plugin-im-client-component)](https://www.npmjs.com/package/rollup-plugin-im-client-component)
+[![npm](https://img.shields.io/npm/v/@stylelish/rollup-plugin-im-client-component)](https://www.npmjs.com/package/@stylelish/rollup-plugin-im-client-component)
 
 ## Features
 
@@ -20,7 +27,7 @@ Let your components say `'use client'` themselves
 ### Installation
 
 ```bash
-pnpm add -D rollup-plugin-im-client-component
+pnpm add -D @stylelish/rollup-plugin-im-client-component
 ```
 
 ## Quick Start
@@ -32,7 +39,7 @@ pnpm add -D rollup-plugin-im-client-component
 ```typescript
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import clientDirective from 'rollup-plugin-im-client-component';
+import clientDirective from '@stylelish/rollup-plugin-im-client-component';
 
 export default defineConfig({
   build: {
@@ -55,7 +62,7 @@ export default defineConfig({
 `rollup.config.js`
 
 ```typescript
-import clientDirective from 'rollup-plugin-im-client-component';
+import clientDirective from '@stylelish/rollup-plugin-im-client-component';
 
 export default {
   input: 'src/index.ts',
