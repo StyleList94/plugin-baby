@@ -1,4 +1,4 @@
-# vite-plugin-crush-envy
+# @stylelish/vite-plugin-crush-envy
 
 ## 1.0.2
 

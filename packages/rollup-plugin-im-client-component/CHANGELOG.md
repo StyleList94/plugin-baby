@@ -1,4 +1,4 @@
-# rollup-plugin-im-client-component
+# @stylelish/rollup-plugin-im-client-component
 
 ## 1.0.1
 
