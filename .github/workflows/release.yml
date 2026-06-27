@@ -54,6 +54,7 @@ jobs:
         uses: changesets/action@v1
         with:
           setupGitUser: false
+          commitMode: 'github-api'
           version: pnpm run version
           publish: pnpm run release
           title: 'chore: release packages'
