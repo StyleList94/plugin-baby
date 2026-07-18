@@ -151,3 +151,5 @@ Patterns A/B ship raw CSS (no Tailwind/PostCSS — `public/` skips the pipeline)
 - **Extra HTML entries** (options page, side panel, devtools) are regular Vite inputs — add them to `build.rollupOptions.input` yourself and reference the output path in your manifest.
 - **Watch limitation** — only entry files (and the manifest) are registered with the watcher. Edits to modules _imported by_ content/background entries don't trigger a rebuild of the main pass.
 - **Output name collision** — `content` and `scripts` entries sharing a filename stem (`a/content.ts` + `b/content.ts`) would overwrite each other at `scripts/content.js`, so the build fails fast instead.
+
+_익스텐션 야호~_
