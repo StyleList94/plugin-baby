@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Fixture Extension",
+  "version": "0.0.0",
+  "action": { "default_popup": "index.html" },
+  "background": { "service_worker": "src/background.ts" },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["src/scripts/content.ts"],
+      "css": ["styles/base.css"]
+    }
+  ],
+  "permissions": ["storage"]
+}

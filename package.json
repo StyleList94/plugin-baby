@@ -4,6 +4,7 @@
   "scripts": {
     "build": "turbo run build",
     "lint": "turbo run lint",
+    "test": "turbo run test",
     "format": "prettier --write \"**/*.{ts,md}\"",
     "check-types": "turbo run check-types",
     "changeset": "changeset",
