@@ -47,17 +47,17 @@
     "rollup": ">=3.0.0"
   },
   "dependencies": {
-    "es-module-lexer": "^2.1.0",
-    "magic-string": "^0.30.21",
-    "picomatch": "^4.0.4"
+    "es-module-lexer": "^2.3.1",
+    "magic-string": "^1.0.0",
+    "picomatch": "^4.0.5"
   },
   "devDependencies": {
     "@plugin-baby/eslint-config": "workspace:*",
     "@plugin-baby/typescript-config": "workspace:*",
-    "@types/node": "^24.12.4",
+    "@types/node": "^24.13.3",
     "@types/picomatch": "^4.0.3",
-    "rollup": "^4.60.4",
-    "tsdown": "^0.22.0",
+    "rollup": "^4.62.2",
+    "tsdown": "^0.22.9",
     "typescript": "^6.0.3"
   }
 }
