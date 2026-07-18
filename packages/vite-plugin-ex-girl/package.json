@@ -1,6 +1,6 @@
 {
   "name": "@stylelish/vite-plugin-ex-girl",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Build Chrome extensions (MV3) with Vite",
   "author": "StyleList94",
   "license": "MIT",
